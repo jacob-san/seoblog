@@ -53,4 +53,12 @@ const userSchema = new mongoose.Schema(
   { timeStamp: true }
 );
 
+userSchema.virtual("password").set(function(password) {
+  // Create temp var password
+  this._password;
+  // Generate salt
+
+  // encrypt password
+});
+
 module.exports = mongoose.model("User", userSchema);
