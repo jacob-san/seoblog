@@ -20,7 +20,7 @@ mongoose
     useCreateIndex: true,
     useFindAndModify: false
   })
-  .then(() => console.log("DB Connected"));
+  .then(test => console.log("DB Connected"));
 
 // middlewares
 app.use(morgan("dev"));
