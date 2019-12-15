@@ -69,6 +69,8 @@ exports.signout = (req, res) => {
   });
 };
 
-exports.requiresSignin = expressJwt({
-  secret: process.env.JWT_SECRET
+const SECRET = "KH2H4KIH1I147979CACA97AFA";
+
+exports.requireSignin = expressJwt({
+  secret: SECRET
 });
